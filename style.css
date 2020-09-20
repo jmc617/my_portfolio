@@ -1,39 +1,20 @@
-* {
+.container, .footer-text{
     text-align: center;
-    /* color: white; */
 }
 html {
     height: 100%;
-    box-sizing: border-box;
     background-image: url(background_images/Clarence.svg);
     /* background-image: linear-gradient(to right bottom, #0f117a, #07258a, #003799, #0048a7, #0059b5, #006bc2, #007dce, #008fd9, #00a6e3, #00bce0, #00cfd2, #00e0be); */
   }
   
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    position: relative;
-    margin: 0;
-    padding-bottom: 50px;
-    min-height: 100%;
+body {
+    display: flex;
+    flex-direction: column;
     font-family: "Helvetica Neue", Arial, sans-serif;
   }
   
-/* html, body {
-    height: 100%;
-    min-height: 100%;
-    background-image: linear-gradient(to right bottom, #0f117a, #07258a, #003799, #0048a7, #0059b5, #006bc2, #007dce, #008fd9, #00a6e3, #00bce0, #00cfd2, #00e0be);
-    background-color: #0f117a;
-} */
 header {
     background-color: #ddf516;
-}
-h1 {
-    /* background-color: #12e2a3; */
 }
 i {
     color: #12e2a3;
@@ -42,20 +23,13 @@ i {
 a {
     text-decoration: none;
 }
-footer {
-    /* position: ; */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    background-color:#0045AA;
-    
-}
-/* .footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color:#0045AA;
-  } */
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
